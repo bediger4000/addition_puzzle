@@ -28,8 +28,10 @@ It's probably completely legitimate to expect an experienced programmer to come 
 with a single-pass solution when prompted and assured it's possible.
 A one-pass solution doesn't require some Robert Tarjan-level obscure algorithm.
 It only requires realizing that 
-if the algorithm sums the current number with every number (kept in a hashtable) it's encountered,
-it will find the desired sum (if it exists).
+you can subtract the current number from the desired number,
+yielding the only number that will sum to the desired number.
+The algorithm can check to see if that number has appeared so far
+by keeping all numbers seen so far in a map/dict/hashtable.
 A single pass will encounter every number in the list.
 
 A more advanced programmer can demonstrate understanding of "single pass",

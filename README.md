@@ -32,7 +32,9 @@ you can subtract the current number from the desired number,
 yielding the only number that will sum to the desired number.
 The algorithm can check to see if that number has appeared so far
 by keeping all numbers seen so far in a map/dict/hashtable.
-A single pass will encounter every number in the list.
+A single pass will encounter every number in the list,
+and because `k - m = n` and `k - n = m`, you're guaranteed to eventually find `m`
+(if you're given `n`) in the map.
 
 A more advanced programmer can demonstrate understanding of "single pass",
 hash tables, and algorithmic complexity.
